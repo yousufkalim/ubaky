@@ -16,13 +16,172 @@
 }
 
 .card_container {
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
 }
 
 .menu_card {
   width: 23%;
+  height: 35%;
   margin: 0 1%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #fe802b;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card_header {
+  flex-basis: 70%;
+  position: relative;
+}
+
+.thumbnail {
+  height: 100%;
+  width: 100%;
+}
+
+.thumbnail img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.discount {
+  position: absolute;
+  width: 46px;
+  height: 28px;
+  left: 0;
+  top: 40px;
+  background: #fe802b;
+  border-radius: 0px 30px 30px 0px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.item_id {
+  position: absolute;
+  width: 75px;
+  height: 26px;
+  left: 20px;
+  bottom: 15px;
+  background: #ffffff;
+  border-radius: 5px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #4b4b4e;
+}
+
+.card_footer {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.name_section h5 {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: inter;
+  line-height: 27.36px;
+  color: #383838;
+}
+
+.name_section h6 {
+  font-size: 16px;
+  font-family: inter;
+  font-weight: 500;
+  line-height: 18.24px;
+  color: #666666;
+  text-align: left;
+}
+
+.price_section h5 {
+  font-size: 20px;
+  font-family: inter;
+  font-weight: 600;
+  line-height: 22.8px;
+  color: #fe802b;
+  background: #fff2ea;
+  width: 59px;
+  height: 34px;
+  border-radius: 8px;
+  padding: 6px 5px 11px 11px;
+}
+
+.price_section h6 {
+  font-size: 16px;
+  font-family: inter;
+  font-weight: 500;
+  line-height: 18.24px;
+  color: #00bf71;
+}
+
+@media only screen and (max-width: 1500px) {
+  .menu_card {
+    height: 30%;
+  }
+
+  .name_section h5 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .name_section h6 {
+    font-weight: 400;
+  }
+
+  .price_section h5 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.8px;
+  }
+
+  .price_section h6 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .menu_card {
+    height: 25%;
+  }
+
+  .name_section h5 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .name_section h6 {
+    font-weight: 400;
+  }
+
+  .price_section h5 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.8px;
+    width: 50px;
+    height: 25px;
+    border-radius: 8px;
+    padding: 2px;
+  }
+
+  .price_section h6 {
+    font-size: 13px;
+    font-weight: 400;
+  }
 }
