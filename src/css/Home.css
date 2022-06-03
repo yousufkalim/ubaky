@@ -1,0 +1,28 @@
+.body_container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.carousel_container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card_container {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+.menu_card {
+  width: 23%;
+  margin: 0 1%;
+}
