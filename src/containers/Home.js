@@ -33,20 +33,20 @@ export default function Home() {
       <Header />
       <div className="carousel_container">
         <Carousel
-          autoPlay={false}
+          autoPlay
           infiniteLoop
           interval="5000"
           transitionTime="1000"
           stopOnHover={false}
           showThumbs={false}
-          showArrows={false}
+          showArrows={true}
           showIndicators={true}
           showStatus={false}
         >
           {paginatedMenus.map((menuSet) => {
             return (
               <div className="card_container">
-                {menus.map((menu) => (
+                {menuSet.map((menu) => (
                   <MenuCard menu={menu} />
                 ))}
               </div>
